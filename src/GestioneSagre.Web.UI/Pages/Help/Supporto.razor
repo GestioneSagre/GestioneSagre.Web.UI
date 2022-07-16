@@ -3,14 +3,14 @@
 @using GestioneSagre.Web.UI.Components
 @inject ISupportoService supportoService
 
-<PageTitle>Gestione Sagre</PageTitle>
+@*<PageTitle>Gestione Sagre</PageTitle>
 
 <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="/">Home Page</a></li>
         <li class="breadcrumb-item active" aria-current="page">Help / Richiesta di Supporto</li>
     </ol>
-</nav>
+</nav>*@
 
 <h1>Richiesta di supporto</h1>
 <div class="testo"><br /></div>
@@ -20,7 +20,7 @@
 </MudAlert>
 
 <div class="testo"><br /></div>
-<CustomAlert tipoAlert="@typeAlert" testo="@textAlert" />
+<AlertMessage tipoAlert="@typeAlert" testo="@textAlert"></AlertMessage>
 
 <div class="testo"><br /></div>
 <EditForm Model="@model" OnValidSubmit="Submit">
