@@ -1,0 +1,9 @@
+﻿@using MudBlazor
+
+<MudAlert Severity="@severity" Dense="@dense">@testo</MudAlert>
+
+@code {
+    [Parameter] public Severity severity { get; set; }
+    [Parameter] public bool dense { get; set; }
+    [Parameter] public string testo { get; set; }
+}
