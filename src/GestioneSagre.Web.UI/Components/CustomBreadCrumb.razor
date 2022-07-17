@@ -31,7 +31,7 @@
     {
         listVoiceMenu = voiceMenu.Split(';');
         initForeach = 0;
-        lastForeach = voiceMenu.Count();
+        lastForeach = listVoiceMenu.Count();
 
         await Task.FromResult(listVoiceMenu);
     }
